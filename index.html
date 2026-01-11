@@ -3,46 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Home | My Portfolio</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-<header>
-    <h1>My Portfolio</h1>
-    <nav>
+<header class="header">
+    <h1 class="logo">My Portfolio</h1>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav id="navMenu" class="nav">
         <a href="index.html" class="active">Home</a>
         <a href="project.html">Projects</a>
         <a href="contact.html">Contact</a>
+        <a href="videoDemo.html">Video Demo</a>
+        <a href="sitereport.html">Site Report</a>
     </nav>
 </header>
 
 <main class="home">
     <section class="intro">
-        <h2>Hi, I’m Krishna Bista </h2>
-
-        <p class="tagline">
-            Beginner Web Developer | Learner | Future Professional
-        </p>
-
+        <h3>Hi, I’m Krishna Bista</h3>
+        <p class="tagline">Beginner Web Developer | Learner | Future Professional</p>
         <p>
-            Welcome to my portfolio website. This site showcases my work, skills, and
-            the projects I create while learning web development.
+            Welcome to my portfolio website. This site showcases my work, skills,
+            and the projects I create while learning web development.
         </p>
-
-        <button onclick="location.href='project.html'">
-            View My Projects
-        </button>
+        <button onclick="location.href='project.html'">View My Projects</button>
     </section>
 </main>
 
 <footer>
-    <p>© 2026 Krishna Bista</p>
+    <p>2026 Krishna Bista</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
