@@ -5,101 +5,109 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
-    color: #333;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background: #f2f6ff;
 }
 
-header {
-    background: #1e90ff;
-    color: #fff;
-    padding: 20px 40px;
+.header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
 }
 
-header h1 {
-    font-size: 24px;
+.logo {
+    color: white;
+    font-size: 22px;
 }
 
-nav a {
-    color: #fff;
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
     text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
+    font-size: 16px;
 }
 
-nav a:hover {
+.nav a.active {
     text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
 }
 
 .contact {
     max-width: 600px;
     margin: 40px auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .contact p {
     margin-bottom: 10px;
-    font-size: 15px;
 }
 
 form {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 14px;
+    margin-top: 10px;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    padding: 8px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    font-size: 14px;
-}
-
-textarea {
-    resize: vertical;
-}
-
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: #1e90ff;
+    border-radius: 4px;
 }
 
 button {
-    background: #1e90ff;
-    color: #fff;
+    margin-top: 15px;
+    padding: 10px;
     border: none;
-    padding: 12px;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 15px;
+    background: #0072ff;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
-}
-
-button:hover {
-    background: #187bcd;
+    border-radius: 4px;
 }
 
 footer {
     text-align: center;
     padding: 15px;
     background: #222;
-    color: #fff;
+    color: white;
     margin-top: 40px;
-    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #0072ff;
+        flex-direction: column;
+        width: 180px;
+        padding: 15px;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
