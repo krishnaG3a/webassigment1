@@ -9,16 +9,18 @@
 
 <body>
 
-<header>
-    <h1>My Projects</h1>
+<header class="header">
+    <h1 class="logo">My Portfolio</h1>
 
-    <nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav id="navMenu" class="nav">
         <a href="index.html">Home</a>
         <a href="project.html" class="active">Projects</a>
         <a href="contact.html">Contact</a>
+        <a href="videoDemo.html">Video Demo</a>
+        <a href="sitereport.html">Site Report</a>
     </nav>
-
-    <p>This are some of the projects I’ve worked on while learning web development</p>
 </header>
 
 <main class="projects">
@@ -34,7 +36,7 @@
     <a href="loginpage.html" class="project-card">
         <img src="loginpage.png" alt="Login Page UI">
         <div class="info">
-            <h3>Simple Login Page</h3>
+            <h2>Simple Login Page</h2>
             <p>A clean and simple login form where users can enter their information easily.</p>
         </div>
     </a>
@@ -50,8 +52,14 @@
 </main>
 
 <footer>
-    <p> 2026 This is Myportfolio</p>
+    <p>2026 This is Myportfolio</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
