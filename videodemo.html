@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Demonstration</title>
+    <link rel="stylesheet" href="videodemo.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="videoDemo.html">Video Demo</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Video Demonstration</h1>
+        <iframe src="" title="Video Demo" allowfullscreen></iframe>
+        <p>If you cannot view the video above, watch it <a href="" target="_blank">here</a>.</p>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
