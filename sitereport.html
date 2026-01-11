@@ -6,99 +6,98 @@
     <title>Site Report | Portfolio</title>
     <link rel="stylesheet" href="sitereport.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Site Report</h1>
-    <nav>
+<header class="header">
+    <h1 class="logo">My Portfolio</h1>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav id="navMenu" class="nav">
         <a href="index.html">Home</a>
         <a href="project.html">Projects</a>
         <a href="contact.html">Contact</a>
+        <a href="videoDemo.html">Video Demo</a>
         <a href="sitereport.html" class="active">Site Report</a>
     </nav>
 </header>
 
 <main>
 
-    <section>
-        <h2>Introduction</h2>
-        <p>
-            The site report describes my learning process of basic web development skills covered during this module.
-            It refers to the code I wrote, including the HTML, CSS, design, and debugging done in the project.
-            All through the term, I have had success and difficulties which have enabled me to understand
-            how websites are created and improved.
-        </p>
-    </section>
+<section>
+    <h2>Introduction</h2>
+    <p>
+        The site report describes my learning process of basic web development skills covered during this module.
+        It refers to the code I wrote, including the HTML, CSS, design, and debugging done in the project.
+        All through the term, I have had success and difficulties which have enabled me to understand
+        how websites are created and improved.
+    </p>
+</section>
 
-    <section>
-        <h2>Learning Experience (Ups and Downs)</h2>
-        <p>
-            Learning HTML was easier at the beginning because it focuses on structure.
-            Creating headings, paragraphs, navigation bars, and sections showed me the way a webpage would end and how
-            everything is arranged. The CSS was more hard because a minor mistake could also mess up the whole structure.
-        </p>
-        <p>
-            Sometimes debugging can be frustrating when layout correction may involve missing semicolons in JavaScript code.
-            incorrect selectors. Nonetheless, with the aid of browser developer tools and validators, it has been possible to identify
-            errors functionality and how it can help me improve my code. Without a doubt, one of the biggest learnings for me was learning
-            how the concepts of padding, margins, and borders relate.
-        </p>
-    </section>
+<section>
+    <h2>Learning Experience (Ups and Downs)</h2>
+    <p>
+        Learning HTML was easier at the beginning because it focuses on structure.
+        Creating headings, paragraphs, navigation bars, and sections showed me the way a webpage would end and how
+        everything is arranged. The CSS was more hard because a minor mistake could also mess up the whole structure.
+    </p>
+    <p>
+        Sometimes debugging can be frustrating when layout correction may involve missing semicolons in JavaScript code,
+        incorrect selectors. Nonetheless, with the aid of browser developer tools and validators, it has been possible to identify
+        errors functionality and how it can help me improve my code.
+    </p>
+</section>
 
-    <section>
-        <h2>Development of the Site</h2>
-        <p>
-            Throughout the term, my website grew from a single page into a multi-page portfolio including
-            Home, Projects, Contact, videodemo and this Site Report page. I learn how to link between pages,
-            Organize the files better and reutilize CSS to maintain consistent design across the site.
-        </p>
-    </section>
+<section>
+    <h2>Development of the Site</h2>
+    <p>
+        Throughout the term, my website grew from a single page into a multi-page portfolio including
+        Home, Projects, Contact, videodemo and this Site Report page.
+    </p>
+</section>
 
-    <section>
-        <h2>Design Decisions and UI</h2>
-        <p>
-           I decided to focus on having a clean interface design to make the website more friendly for its users.
-           A non-serif font was used for easy readability, and all colours were kept the design is calm and professional. 
-           The navigation bar is the same on each page so that users can navigate conveniently around the site.
-        </p>
-        <p>
-            I got inspiration from the basic portfolio websites and the ones demonstrated in the lectures 
-            and tutorials. I have avoided complex animations to make this website friendly to its visitors.
-        </p>
-    </section>
+<section>
+    <h2>Design Decisions and UI</h2>
+    <p>
+        I decided to focus on having a clean interface design to make the website more friendly for its users.
+        A non-serif font was used for easy readability, and colours were kept calm and professional.
+    </p>
+</section>
 
-    <section>
-        <h2>Validation Evidence</h2>
-        <p>
-            Below are screenshots showing that my HTML and CSS files validate successfully using
-            W3C validation tools.
-        </p>
-        <img src="html-validation.png" alt="HTML Validation Screenshot">
-        <img src="css-validation.png" alt="CSS Validation Screenshot">
-    </section>
+<section>
+    <h2>Validation Evidence</h2>
+    <p>
+        Below are screenshots showing that my HTML and CSS files validate successfully using W3C validation tools.
+    </p>
+    <img src="html-validation.png" alt="HTML Validation Screenshot">
+    <img src="css-validation.png" alt="CSS Validation Screenshot">
+</section>
 
-    <section>
-        <h2>Video Demonstration</h2>
-        <p>
-            The video demonstration of my website is available at the link below:
-        </p>
-        <a href="" target="_blank">Video Demonstration</a>
-    </section>
+<section>
+    <h2>Video Demonstration</h2>
+    <a href="" target="_blank">Video Demonstration</a>
+</section>
 
-    <section>
-        <h2>Conclusion</h2>
-        <p>
-         In conclusion, I found this module very beneficial as it has enabled me to gain a great foundation in web development.
-         Even with trial and error involved in this process, it increased my confidence levels in coding,design, and problem-solving skills. 
-         I feel more confident in building and designing websites desing HTML and CSS.
-        </p>
-    </section>
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        This module helped me gain a strong foundation in web development and increased my confidence
+        in coding, design, and problem-solving skills.
+    </p>
+</section>
 
 </main>
 
 <footer>
-    <p> 2026 My Portfolio</p>
+    <p>2026 My Portfolio</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
