@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact | My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Contact Me</h1>
-    <nav>
+<header class="header">
+    <h1 class="logo">My Portfolio</h1>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav id="navMenu" class="nav">
         <a href="index.html">Home</a>
         <a href="project.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="videoDemo.html">Video Demo</a>
+        <a href="sitereport.html">Site Report</a>
     </nav>
 </header>
 
@@ -35,8 +42,14 @@
 </main>
 
 <footer>
-    <p> 2026 Krishna Bista</p>
+    <p>2026 Krishna Bista</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
